@@ -1,12 +1,12 @@
 import React from "react";
-import { Home, Landing, Error, Profile, Subahtwentyninenov } from "./pages";
+import { Navbar, Landing, Error, Profile, Subahtwentyninenov } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" element={<Navbar />} />
 				<Route path="/landing" element={<Landing />} />
 				<Route path="/profile" element={<Profile />} />
 				<Route path="/login" element={<div>Oye, Chup ho jaa!</div>} />
